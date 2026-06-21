@@ -1,35 +1,113 @@
 {
   "version": "2.0",
-  "dataset_id": "on003082",
-  "source": "openneuro",
-  "source_id": "ds003082",
+  "pipeline_stage": "enriched",
   "title": "Auditory Cortex Mapping Dataset",
+  "license": "CC0",
+  "dataset_type": "raw",
   "authors": {
     "Jonathan Cote": {},
     "Etienne de Villers-Sidani": {}
   },
-  "license": "CC0",
-  "dataset_type": "raw",
   "related_identifiers": [
     {
       "identifier": "10.18112/openneuro.ds003082.v1.0.0",
       "identifier_type": "DOI",
       "relation_type": "IsIdenticalTo"
+    },
+    {
+      "identifier": "https://github.com/nemarDatasets/on003082",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on003082",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
     }
-  ],
-  "pipeline_stage": "seeded",
-  "bids_version": "1.2.0",
-  "recording_modality": [
-    "anat",
-    "meg"
-  ],
-  "datatypes": [
-    "anat",
-    "meg"
   ],
   "funding_references": [
     {
       "funder_name": "This work was funded in part by grants from the Natural Sciences and Engineering Research Council of Canada (NSERC), the Centre for Research on Brain, Language and Music (CRBLM), and the Reseau quebecois de recherche sur le vieillissement (RQRV)."
+    },
+    {
+      "funder_name": "Natural Sciences and Engineering Research Council of Canada"
+    },
+    {
+      "funder_name": "Centre for Research on Brain, Language and Music"
+    },
+    {
+      "funder_name": "Reseau quebecois de recherche sur le vieillissement"
     }
-  ]
+  ],
+  "modalities": [
+    "anat",
+    "meg"
+  ],
+  "resource_type_specific": "Structural MRI Dataset",
+  "sizes": [
+    "0.0 KB (1 files)"
+  ],
+  "formats": [
+    ".1_meg4",
+    ".2_meg4",
+    ".3_meg4",
+    ".4_meg4",
+    ".5_meg4",
+    ".acq",
+    ".cfg",
+    ".cls",
+    ".ds/BadChannels",
+    ".dsc",
+    ".eeg",
+    ".gitattributes",
+    ".gz",
+    ".hc",
+    ".hist",
+    ".infods",
+    ".jpg",
+    ".json",
+    ".md",
+    ".meg4",
+    ".mrk",
+    ".newds",
+    ".pos",
+    ".res4",
+    ".segments",
+    ".tsv"
+  ],
+  "description": "This dataset comprises MEG and MRI data from a single subject collected to demonstrate a novel MEG-based auditory cortex mapping technique. The subject passively listened to 1,795 iso-intensity pure tones spanning 100 Hz to 21.5 kHz during a 12-minute MEG acquisition session using a CTF 275 system. The dataset includes anatomical MRI data processed with FreeSurfer and serves as a reference example for auditory frequency mapping in human cortex.",
+  "methods_description": "MEG data were acquired at 120 kHz using a CTF 275 system with 272 axial gradiometers, 26 reference sensors, and auxiliary channels (ECG, EOG). Stimuli consisted of binaurally-presented pure tones delivered via intra-aural earphones at a mean rate of 3 Hz. Head shape and fiducial points were digitized using a Polhemus Fastrak device. Anatomical MRI was acquired at 1.5T and processed with FreeSurfer 5.3.",
+  "keywords": [
+    {
+      "term": "MEG"
+    },
+    {
+      "term": "auditory cortex"
+    },
+    {
+      "term": "frequency mapping"
+    },
+    {
+      "term": "pure tones"
+    },
+    {
+      "term": "neuroplasticity"
+    },
+    {
+      "term": "MRI"
+    },
+    {
+      "term": "tonotopy"
+    },
+    {
+      "term": "single-subject"
+    },
+    {
+      "term": "CTF 275"
+    },
+    {
+      "term": "FreeSurfer"
+    }
+  ],
+  "source_hash": "b36c7eac3bdaaeb4fc1234526864a38bed8a6221effe7e80ddf39b76dd74ce18"
 }
