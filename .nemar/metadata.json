@@ -2,18 +2,47 @@
   "version": "2.0",
   "pipeline_stage": "enriched",
   "title": "Auditory Cortex Mapping Dataset",
+  "description": "This MEG dataset comprises auditory cortex mapping data from a single subject acquired using a CTF 275 system at 120 kHz sampling rate. The experiment involved passive listening to 1,795 iso-intensity pure tones ranging from 100 Hz to 21.5 kHz presented binaurally over a 12-minute acquisition run. The dataset includes anatomical MRI data processed with FreeSurfer and serves as a reference example for MEG-based auditory cortex mapping techniques.",
+  "methods_description": "MEG data were acquired using a CTF 275 system at 120 kHz sampling rate (downsampled to 12 kHz for storage) with a 3 kHz anti-aliasing low-pass filter and 3rd order gradient recording. The subject was seated and passively listened to binaurally-presented pure tones via intra-aural earphones at a mean presentation rate of 3 Hz. Head shape and fiducial points were digitized using a Polhemus Fastrak device. Anatomical data were acquired on a 1.5T MRI scanner and processed with FreeSurfer 5.3.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
     "Jonathan Cote": {},
     "Etienne de Villers-Sidani": {}
   },
-  "related_identifiers": [
+  "keywords": [
     {
-      "identifier": "10.18112/openneuro.ds003082.v1.0.0",
-      "identifier_type": "DOI",
-      "relation_type": "IsIdenticalTo"
+      "term": "MEG"
     },
+    {
+      "term": "auditory cortex"
+    },
+    {
+      "term": "tonotopic mapping"
+    },
+    {
+      "term": "pure tone stimulation"
+    },
+    {
+      "term": "neuroimaging"
+    },
+    {
+      "term": "single-subject"
+    },
+    {
+      "term": "CTF 275"
+    },
+    {
+      "term": "frequency mapping"
+    },
+    {
+      "term": "FreeSurfer"
+    },
+    {
+      "term": "Montreal Neurological Institute"
+    }
+  ],
+  "related_identifiers": [
     {
       "identifier": "https://github.com/nemarDatasets/on003082",
       "identifier_type": "URL",
@@ -23,29 +52,34 @@
       "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on003082",
       "identifier_type": "URL",
       "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.18112/openneuro.ds003082.v1.0.0",
+      "identifier_type": "DOI",
+      "relation_type": "IsDerivedFrom"
     }
   ],
   "funding_references": [
     {
-      "funder_name": "This work was funded in part by grants from the Natural Sciences and Engineering Research Council of Canada (NSERC), the Centre for Research on Brain, Language and Music (CRBLM), and the Reseau quebecois de recherche sur le vieillissement (RQRV)."
+      "funder_name": "Natural Sciences and Engineering Research Council of Canada",
+      "award_number": "NSERC"
     },
     {
-      "funder_name": "Natural Sciences and Engineering Research Council of Canada"
+      "funder_name": "Centre for Research on Brain, Language and Music",
+      "award_number": "CRBLM"
     },
     {
-      "funder_name": "Centre for Research on Brain, Language and Music"
-    },
-    {
-      "funder_name": "Reseau quebecois de recherche sur le vieillissement"
+      "funder_name": "Reseau quebecois de recherche sur le vieillissement",
+      "award_number": "RQRV"
     }
   ],
+  "resource_type_specific": "Structural MRI Dataset",
   "modalities": [
     "anat",
     "meg"
   ],
-  "resource_type_specific": "Structural MRI Dataset",
   "sizes": [
-    "0.0 KB (1 files)"
+    "16.6 GB (50 files)"
   ],
   "formats": [
     ".1_meg4",
@@ -73,41 +107,8 @@
     ".pos",
     ".res4",
     ".segments",
-    ".tsv"
+    ".tsv",
+    ".yml"
   ],
-  "description": "This dataset comprises MEG and MRI data from a single subject collected to demonstrate a novel MEG-based auditory cortex mapping technique. The subject passively listened to 1,795 iso-intensity pure tones spanning 100 Hz to 21.5 kHz during a 12-minute MEG acquisition session using a CTF 275 system. The dataset includes anatomical MRI data processed with FreeSurfer and serves as a reference example for auditory frequency mapping in human cortex.",
-  "methods_description": "MEG data were acquired at 120 kHz using a CTF 275 system with 272 axial gradiometers, 26 reference sensors, and auxiliary channels (ECG, EOG). Stimuli consisted of binaurally-presented pure tones delivered via intra-aural earphones at a mean rate of 3 Hz. Head shape and fiducial points were digitized using a Polhemus Fastrak device. Anatomical MRI was acquired at 1.5T and processed with FreeSurfer 5.3.",
-  "keywords": [
-    {
-      "term": "MEG"
-    },
-    {
-      "term": "auditory cortex"
-    },
-    {
-      "term": "frequency mapping"
-    },
-    {
-      "term": "pure tones"
-    },
-    {
-      "term": "neuroplasticity"
-    },
-    {
-      "term": "MRI"
-    },
-    {
-      "term": "tonotopy"
-    },
-    {
-      "term": "single-subject"
-    },
-    {
-      "term": "CTF 275"
-    },
-    {
-      "term": "FreeSurfer"
-    }
-  ],
-  "source_hash": "b36c7eac3bdaaeb4fc1234526864a38bed8a6221effe7e80ddf39b76dd74ce18"
+  "source_hash": "633ea86c06c6aac1ac6288d84780b5d592f38774329ef8e3f415bfa1ccc56ed1"
 }
