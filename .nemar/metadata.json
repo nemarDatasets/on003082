@@ -1,9 +1,9 @@
 {
   "version": "2.0",
-  "pipeline_stage": "enriched",
+  "pipeline_stage": "validated",
   "title": "Auditory Cortex Mapping Dataset",
-  "description": "This MEG dataset comprises auditory cortex mapping data from a single subject acquired using a CTF 275 system at 120 kHz sampling rate. The experiment involved passive listening to 1,795 iso-intensity pure tones ranging from 100 Hz to 21.5 kHz presented binaurally over a 12-minute acquisition run. The dataset includes anatomical MRI data processed with FreeSurfer and serves as a reference example for MEG-based auditory cortex mapping techniques.",
-  "methods_description": "MEG data were acquired using a CTF 275 system at 120 kHz sampling rate (downsampled to 12 kHz for storage) with a 3 kHz anti-aliasing low-pass filter and 3rd order gradient recording. The subject was seated and passively listened to binaurally-presented pure tones via intra-aural earphones at a mean presentation rate of 3 Hz. Head shape and fiducial points were digitized using a Polhemus Fastrak device. Anatomical data were acquired on a 1.5T MRI scanner and processed with FreeSurfer 5.3.",
+  "description": "A single-subject MEG and MRI dataset for demonstrating an MEG-based auditory cortex mapping technique. The participant passively listened to 1795 iso-intensity pure tones spanning 100 Hz to about 21.5 kHz in quarter-octave steps while fixating on a cross. The dataset includes empty-room recordings, head-shape digitization, and anatomical MRI processed with FreeSurfer.",
+  "methods_description": "MEG was recorded with a CTF 275 system (340 channels including reference sensors, axial gradiometers, ECG and EOG) at the Montreal Neurological Institute. A single run of about 653 s was recorded at 12000 Hz with a 3000 Hz anti-aliasing filter and 3rd order gradient compensation. Binaural stimuli were delivered via intra-aural earphones and generated with the Matlab Psychophysics toolbox at an average presentation rate of 3 Hz. Head points and fiducials were digitized with a Polhemus Fastrak, and anatomy was acquired with 1.5T MRI and processed with FreeSurfer 5.3.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -21,25 +21,17 @@
       "term": "tonotopic mapping"
     },
     {
-      "term": "pure tone stimulation"
+      "term": "pure tones"
     },
     {
-      "term": "neuroimaging"
+      "term": "Magnetoencephalography",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D015225"
     },
     {
-      "term": "single-subject"
-    },
-    {
-      "term": "CTF 275"
-    },
-    {
-      "term": "frequency mapping"
-    },
-    {
-      "term": "FreeSurfer"
-    },
-    {
-      "term": "Montreal Neurological Institute"
+      "term": "Auditory Cortex",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D001303"
     }
   ],
   "related_identifiers": [
@@ -49,28 +41,28 @@
       "relation_type": "IsDescribedBy"
     },
     {
-      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on003082",
-      "identifier_type": "URL",
-      "relation_type": "IsDescribedBy"
-    },
-    {
       "identifier": "10.18112/openneuro.ds003082.v1.0.0",
       "identifier_type": "DOI",
       "relation_type": "IsDerivedFrom"
+    },
+    {
+      "identifier": "https://nemar.org/dataset/on003082",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
     }
   ],
   "funding_references": [
     {
-      "funder_name": "Natural Sciences and Engineering Research Council of Canada",
-      "award_number": "NSERC"
+      "funder_name": "This work was funded in part by grants from the Natural Sciences and Engineering Research Council of Canada (NSERC), the Centre for Research on Brain, Language and Music (CRBLM), and the Reseau quebecois de recherche sur le vieillissement (RQRV)."
     },
     {
-      "funder_name": "Centre for Research on Brain, Language and Music",
-      "award_number": "CRBLM"
+      "funder_name": "Natural Sciences and Engineering Research Council of Canada (NSERC)"
     },
     {
-      "funder_name": "Reseau quebecois de recherche sur le vieillissement",
-      "award_number": "RQRV"
+      "funder_name": "Centre for Research on Brain, Language and Music (CRBLM)"
+    },
+    {
+      "funder_name": "Réseau québécois de recherche sur le vieillissement (RQRV)"
     }
   ],
   "resource_type_specific": "Structural MRI Dataset",
@@ -79,7 +71,7 @@
     "meg"
   ],
   "sizes": [
-    "16.6 GB (50 files)"
+    "15.50 GB (50 files)"
   ],
   "formats": [
     ".1_meg4",
