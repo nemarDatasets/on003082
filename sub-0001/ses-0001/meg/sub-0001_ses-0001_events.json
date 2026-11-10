@@ -1,3 +1,5 @@
 {
-	"trial_type": "Stimulus frequency in hz"
+	"trial_type": {
+	"Description": "Stimulus frequency in hz"
+	}
 }
