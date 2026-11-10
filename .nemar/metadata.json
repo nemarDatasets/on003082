@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "Auditory Cortex Mapping Dataset",
-  "description": "A single-subject MEG and MRI dataset for demonstrating an MEG-based auditory cortex mapping technique. The participant passively listened to 1795 iso-intensity pure tones spanning 100 Hz to about 21.5 kHz in quarter-octave steps while fixating on a cross. The dataset includes empty-room recordings, head-shape digitization, and anatomical MRI processed with FreeSurfer.",
-  "methods_description": "MEG was recorded with a CTF 275 system (340 channels including reference sensors, axial gradiometers, ECG and EOG) at the Montreal Neurological Institute. A single run of about 653 s was recorded at 12000 Hz with a 3000 Hz anti-aliasing filter and 3rd order gradient compensation. Binaural stimuli were delivered via intra-aural earphones and generated with the Matlab Psychophysics toolbox at an average presentation rate of 3 Hz. Head points and fiducials were digitized with a Polhemus Fastrak, and anatomy was acquired with 1.5T MRI and processed with FreeSurfer 5.3.",
+  "description": "A single-subject MEG and structural MRI dataset collected to demonstrate a MEG-based auditory cortex mapping technique. The participant passively listened binaurally to 1795 iso-intensity pure tones spanning 100 Hz to about 21.5 kHz in quarter-octave steps, while MEG was recorded on a CTF 275 system. The dataset also includes empty-room recordings, head shape digitization, and a 1.5T anatomical MRI processed with FreeSurfer.",
+  "methods_description": "MEG was recorded with a CTF 275 system at 12000 Hz, with a 3000 Hz anti-aliasing low-pass filter and 3rd order gradient compensation. The run lasted about 653 s. Pure tones were presented through intra-aural earphones at an average rate of 3 Hz with randomized inter-stimulus intervals, generated with the Matlab Psychophysics toolbox. ECG and EOG were recorded and a trigger channel marked stimulus times. Head shape and fiducials were digitized with a Polhemus Fastrak. Anatomy was acquired with a 1.5T MRI and processed with FreeSurfer 5.3. Empty-room recordings were also acquired.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -15,7 +15,9 @@
       "term": "MEG"
     },
     {
-      "term": "auditory cortex"
+      "term": "Auditory Cortex",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D001303"
     },
     {
       "term": "tonotopic mapping"
@@ -29,9 +31,7 @@
       "value_uri": "http://id.nlm.nih.gov/mesh/D015225"
     },
     {
-      "term": "Auditory Cortex",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D001303"
+      "term": "Brainstorm"
     }
   ],
   "related_identifiers": [
@@ -41,14 +41,14 @@
       "relation_type": "IsDescribedBy"
     },
     {
-      "identifier": "10.18112/openneuro.ds003082.v1.0.0",
-      "identifier_type": "DOI",
-      "relation_type": "IsDerivedFrom"
-    },
-    {
       "identifier": "https://nemar.org/dataset/on003082",
       "identifier_type": "URL",
       "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.18112/openneuro.ds003082.v1.0.1",
+      "identifier_type": "DOI",
+      "relation_type": "IsDerivedFrom"
     }
   ],
   "funding_references": [
@@ -102,5 +102,5 @@
     ".tsv",
     ".yml"
   ],
-  "source_hash": "633ea86c06c6aac1ac6288d84780b5d592f38774329ef8e3f415bfa1ccc56ed1"
+  "source_hash": "5528f43cfc6780a50a6e74bf3e78bd6501ea4656d6ed38f3ccd6c365198580c6"
 }
